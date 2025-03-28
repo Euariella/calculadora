@@ -1,0 +1,88 @@
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.developed {
+    text-align: center;
+    margin: 5px 0 20px; /* Espaçamento entre o título e os campos de preenchimento */
+}
+
+.logo {
+    display: block;
+    margin: 10px auto; /* Centraliza o logotipo */
+    max-width: 80%; /* Tamanho do logotipo ajustado para não sobrecarregar */
+    height: auto; /* Mantém a proporção do logotipo */
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 25%; /* Campos de preenchimento mais estreitos */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 0 5px; /* Margem lateral uniforme */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#add {
+    background-color: #28a745; /* Verde para o botão Adicionar */
+}
+
+#subtract {
+    background-color: #dc3545; /* Vermelho para o botão Subtrair */
+}
+
+#clear {
+    background-color: #007bff; /* Azul para o botão Limpar */
+}
+
+button:hover {
+    opacity: 0.8; /* Efeito de hover */
+}
+
+.history-container {
+    margin-top: 20px;
+    max-height: 200px; /* Tamanho fixo da caixa de histórico */
+    overflow-y: auto; /* Rola se exceder a altura */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
